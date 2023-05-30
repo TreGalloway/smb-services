@@ -27,16 +27,7 @@ export default function Footer() {
             License
           </Typography>
         </li>
-        <li>
-          <Typography
-            as="a"
-            href="#"
-            color="blue-gray"
-            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-          >
-            Contribute
-          </Typography>
-        </li>
+        <li></li>
         <li>
           <Typography
             as="a"

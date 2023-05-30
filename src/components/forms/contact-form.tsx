@@ -7,29 +7,36 @@ import {
 
 export default function Contact() {
   return (
-    <Card className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
-      <Typography variant="h4" color="blue-gray">
+    <Card className=" py-6 mx-auto max-w-screen-lg bg-blue-gray-50 shadow-none">
+      <Typography variant="h4" color="blue-gray" className="text-center">
         Call or Email for a Quote
       </Typography>
-      <div className="flex w-max gap-4">
-        <Button
-          className="flex items-center gap-3"
-          variant="gradient"
-          size="lg"
+      <div className="flex flex-col items-center">
+        <div
+          className="grid gap-4"
+          style={{
+            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+            justifyItems: "center",
+          }}
         >
-          {" "}
-          <PhoneArrowUpRightIcon strokeWidth={2} className="h-5 w-5" />
-          Call
-        </Button>
-        <Typography variant="h5">OR</Typography>
-        <Button
-          className="flex items-center gap-3"
-          variant="gradient"
-          size="lg"
-        >
-          <EnvelopeIcon strokeWidth={2} className="h-5 w-5" />
-          Email
-        </Button>
+          <Button
+            className="flex items-center gap-3"
+            variant="gradient"
+            size="lg"
+          >
+            <PhoneArrowUpRightIcon strokeWidth={2} className="h-5 w-5" />
+            Call
+          </Button>
+          <Typography variant="h5">OR</Typography>
+          <Button
+            className="flex items-center gap-3"
+            variant="gradient"
+            size="lg"
+          >
+            <EnvelopeIcon strokeWidth={2} className="h-5 w-5" />
+            Email
+          </Button>
+        </div>
       </div>
     </Card>
   );

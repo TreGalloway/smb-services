@@ -7,9 +7,9 @@ import Footer from "@/components/layout/footer";
 
 export default function Home() {
   return (
-    <main>
+    <main className=" bg-blue-gray-50">
       <Navibar />
-      <div className="mx-24">
+      <div className="lg:mx-24 mx-3">
         <HomeHeader />
         <FAQ />
         <Contact />
