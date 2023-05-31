@@ -1,6 +1,11 @@
 "use client";
 import { Fragment, useState } from "react";
-import { Accordion, AccordionHeader, AccordionBody } from "../../themeprovider";
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+  Typography,
+} from "../../themeprovider";
 
 function Icon({ id, open }: any) {
   return (
@@ -28,9 +33,12 @@ export default function FAQ() {
 
   return (
     <Fragment>
+      <Typography variant="h2" color="blue-gray" className="text-center">
+        Frequently Asked Questions
+      </Typography>
       <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
         <AccordionHeader onClick={() => handleOpen(1)}>
-          What is Material Tailwind?
+          Question #1
         </AccordionHeader>
         <AccordionBody>
           We&apos;re not always in the position that we want to be at.
@@ -41,7 +49,7 @@ export default function FAQ() {
       </Accordion>
       <Accordion open={open === 2} icon={<Icon id={2} open={open} />}>
         <AccordionHeader onClick={() => handleOpen(2)}>
-          How to use Material Tailwind?
+          Question #2
         </AccordionHeader>
         <AccordionBody>
           We&apos;re not always in the position that we want to be at.
@@ -52,7 +60,7 @@ export default function FAQ() {
       </Accordion>
       <Accordion open={open === 3} icon={<Icon id={3} open={open} />}>
         <AccordionHeader onClick={() => handleOpen(3)}>
-          What can I do with Material Tailwind?
+          Question #3
         </AccordionHeader>
         <AccordionBody>
           We&apos;re not always in the position that we want to be at.
